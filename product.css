@@ -1,0 +1,135 @@
+*{margin: 0px; padding: 0px;}
+header{
+	height: 100vh;
+	
+}
+/* Navbar container */
+.navbar {
+  overflow: hidden;
+  background-color: #333;
+  font-family: Arial;
+  padding: 0;
+  margin: 0;
+}
+
+/* Links inside the navbar */
+.navbar a {
+  float: left;
+  font-size: 16px;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  padding-left: 0;
+  letter-spacing: 0;
+}
+.nav-right{
+  float: right;
+}
+.navbar a:hover{background-color: white;color: black;}
+.main{
+	top: 40%;
+	width: 100%;
+	margin: auto;
+}
+.column {
+  float: left;
+  width: 25%;
+  padding: 10px 10px;
+  padding-bottom: 7px;
+}
+
+/* Remove extra left and right margins, due to padding */
+.row {margin: 0 -5px;padding-left: 20%;}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Responsive columns */
+@media screen and (max-width: 600px) {
+  .column {
+    width: 100%;
+    display: block;
+    margin-bottom: 20px;
+  }
+}
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  padding: 16px;
+  text-align: center;
+  background-color: #f1f1f1;
+  padding-bottom: 7px;
+}
+.price {
+  color: grey;
+  font-size: 22px;
+}
+
+.card button {
+  border: none;
+  outline: 0;
+  padding: 12px;
+  color: white;
+  background-color: #000;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+  font-size: 18px;
+}
+
+.card button:hover {
+  opacity: 0.7;
+  
+}
+
+.footer{
+ padding-top: 5px;
+  background-color: purple;
+  overflow: hidden;
+  width: 100%;
+  height: 40px;
+  font-weight: bold;
+  position: fixed;
+  text-align: center;
+  bottom: 0;
+}
+.footer a{
+  float: left;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+    bottom: 0;
+}
+.footer a:hover{
+  background-color: white;
+  color: black;
+}
+.footer a.active{
+  background-color: #4CAF50;
+    color: white;
+}
+.bottom-right{
+  float: right;
+}
+.heading{
+  color: #000;
+  text-transform: uppercase;
+  bottom: 0;
+  height: 70px;
+  background-color: purple;
+}
+.heading h1{
+  font-size: 32px;
+  line-height: 20px;
+  padding-bottom: 10px;
+  padding-top: 15px;
+  background-color: purple;
+  color: white;
+}
